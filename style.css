@@ -15,6 +15,14 @@ body{
     background: #FD1BF6;
 }
 
+.box.active .text{
+    display: none;
+}
+
+.box.active .content{
+    display: flex;
+}
+
 .box{
     background: #fff;
     width: 290px;
