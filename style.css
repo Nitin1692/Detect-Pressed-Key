@@ -1,7 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #FD1BF6;
+}
+
+.box{
+    background: #fff;
+    width: 290px;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.content, .key-code, .details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box .content{
+    flex-direction: column;
+    display: none;
+}
+
+.content .key-code{
+    border: 5px solid #FD1BF6;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.key-code, .key-name, .text{
+    font-size: 45px;
+    color: #FD1BF6;
+    font-weight: 500;
+}
+
+.text{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.content .details{
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.details p:last-child{
+    border-left: 1px solid #A0A0A0;
+}
+
+.details p{
+    width: 100%;
+    text-align: center;
 }
